@@ -28,6 +28,7 @@ const TAG: Record<Unit["label"], string> = {
   oc: "bg-[#e2ebf3] text-[#1d4466]",
   clinic: "bg-[#e0efe6] text-[#1c5a36]",
   serviced: "bg-[#ece4f2] text-[#4b2d66]",
+  so: "bg-[#f3e9d7] text-[#6b4c14]",
 };
 
 const PAGE = 12;
@@ -78,11 +79,11 @@ export default function Landing() {
       <section className="bg-ink text-white">
         <div className="mx-auto flex max-w-[1240px] flex-wrap items-center gap-10 px-4 pb-16 pt-12 sm:px-6 md:pt-14">
           <div className="flex min-w-0 flex-[999_1_520px] flex-col gap-5">
-            <span className="text-sm font-semibold text-gold">التسعين الشمالي · التسعين الجنوبي · محور محمد نجيب</span>
+            <span className="text-sm font-semibold text-gold">التسعين الشمالي · التسعين الجنوبي · محور محمد نجيب · طريق السويس</span>
             <h1 className="font-display text-[30px] font-extrabold leading-[1.45] sm:text-[42px]">
               محلات ومكاتب وعيادات في التجمع الخامس
               <br />
-              <span className="text-gold">7 مشروعات</span> في صفحة واحدة
+              <span className="text-gold">10 مشروعات</span> في صفحة واحدة
             </h1>
             <p className="max-w-[620px] text-[17px] leading-8 text-[#c9cfd8]">
               قارن بين أقوى المشروعات التجارية والإدارية في التجمع، واختار وحدتك حسب النوع والمساحة ونظام السداد.
@@ -108,7 +109,7 @@ export default function Landing() {
             </div>
             <div className="grid max-w-[680px] grid-cols-2 gap-4 border-t border-[#2a3b54] pt-5 sm:grid-cols-4">
               {[
-                ["7", "مشروعات"],
+                ["10", "مشروعات"],
                 ["5%", "مقدم يبدأ من"],
                 ["8 سنين", "تقسيط لحد"],
                 ["40%", "خصم كاش لحد"],

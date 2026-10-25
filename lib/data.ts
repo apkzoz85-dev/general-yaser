@@ -1,6 +1,6 @@
 export type UnitType = "shop" | "office" | "clinic" | "serviced";
-export type ProjectId = "sl" | "gg" | "ml" | "ce" | "on" | "ak" | "w55";
-export type UnitLabel = "shop" | "fnb" | "office" | "clinic" | "oc" | "serviced";
+export type ProjectId = "sl" | "gg" | "ps" | "ml" | "ce" | "ub" | "on" | "am" | "ak" | "w55";
+export type UnitLabel = "shop" | "fnb" | "office" | "clinic" | "oc" | "serviced" | "so";
 
 export interface Project {
   id: ProjectId;
@@ -61,6 +61,48 @@ export const PROJECTS: Project[] = [
     delivery: "خلال سنتين",
     dp: 0.1,
     pl: "10% مقدم · 5 سنين",
+  },
+  {
+    id: "ps",
+    name: "Citystars Park St.",
+    dev: "Sky Innovo Developments",
+    loc: "المدخل الرئيسي للقاهرة الجديدة — 20 دقيقة من المطار",
+    kinds: "إداري",
+    badge: "Fairmont · عائد متوقع 13%",
+    img: "/images/parkst.jpg",
+    usp: "استثمارات 1.9 مليار دولار على 140 ألف م² وواجهة 1.2 كم. إدارة المكاتب بالشراكة مع Fairmont، تصميم LEED، والجراج داخل سعر الوحدة.",
+    plan: "5% + 5% بعد 3 شهور · 8 سنين",
+    delivery: "[ميعاد الاستلام]",
+    dp: 0.1,
+    pl: "5% + 5% بعد 3 شهور · 8 سنين",
+  },
+  {
+    id: "ub",
+    name: "UBL",
+    dev: "Tameer",
+    loc: "أمام الجامعة الأمريكية (بوابة 3) — جنب كمبوند AZAD",
+    kinds: "إداري",
+    badge: "خصم كاش لحد 30%",
+    img: "/images/ubl.jpg",
+    usp: "Urban Business Lane جوه Urban Walk على 55 فدان: بارك 60 ألف م² وممشى 3 كم. الأرض مسجلة والتمويل العقاري متاح، من تعمير بخبرة 70 سنة.",
+    plan: "10% · 7 سنين أو 30% · 3 سنين (فوري)",
+    delivery: "فوري أو خلال سنتين",
+    dp: 0.1,
+    pl: "10% مقدم · 7 سنين",
+  },
+  {
+    id: "am",
+    name: "AM:PM",
+    dev: "Hassan Allam Properties",
+    loc: "Swan Lake New Cairo — 1.4 كم على طريق السويس مباشرة",
+    kinds: "تجاري + إداري",
+    badge: "خصم كاش 24%",
+    img: "/images/ampm.jpg",
+    usp: "175 ألف م² بيزنس وريتيل وفندق في Swan Lake، 6 كم من المطار و1 كم من الرحاب. من عملائه Ferrari وMercedes وGourmet.",
+    plan: "5% + 5% بعد 3 شهور · 7 سنين",
+    delivery: "خلال سنة ونص",
+    dp: 0.1,
+    pl: "5% + 5% بعد 3 شهور + 5% بعد سنتين · 7 سنين",
   },
   {
     id: "ml",
@@ -138,6 +180,7 @@ export const LABELS: Record<UnitLabel, string> = {
   clinic: "عيادة",
   oc: "مكتب / عيادة",
   serviced: "شقة فندقية",
+  so: "تجاري / إداري",
 };
 
 export const TYPE_FILTERS: { id: "all" | UnitType; label: string }[] = [
@@ -192,6 +235,15 @@ add("on", ["office"], "office", 112, 0, 27000000, "مباني S05 / S09 / S010",
 add("on", ["shop"], "shop", 120, 0, 48000000, "تجاري داخل One Ninety", "استلام من سنة لـ 3 سنين", false);
 // Central
 add("ce", ["office"], "office", 51, 0, 10800000, "مبنى O5 — الدور السادس", "مكاتب من 51 م²", false);
+// Citystars Park St.
+add("ps", ["office"], "office", 120, 0, 25000000, "مكاتب بطوابق مميزة — مساحات وتقسيمات متنوعة", "جراج تحت الأرض داخل السعر · متاح للحجز الفوري", false);
+// UBL — Tameer
+add("ub", ["office"], "office", 125, 0, 24000000, "UBL — استلام خلال سنتين", "داخل Urban Walk · خصم كاش لحد 30%", false, 0.1, "10% مقدم · 7 سنين");
+add("ub", ["office"], "office", 125, 0, 24000000, "UBL — استلام فوري", "الأرض مسجلة · تمويل عقاري متاح", false, 0.3, "30% مقدم · 3 سنين");
+// AM:PM — Hassan Allam
+add("am", ["shop", "office"], "so", 155.7, 0, 42600000, "مبنى C02 — مساحات 155.7 لحد 384 م²", "Core & Shell · جراج 1 / 100 م² · استلام سنة ونص", false);
+add("am", ["shop", "office"], "so", 221, 0, 66000000, "مبنى A04 — مساحات 221 لحد 244 م²", "Core & Shell · استلام سنة ونص", false);
+add("am", ["shop", "office"], "so", 497, 0, 142100000, "مبنى A02", "Core & Shell · استلام سنة ونص", true);
 // Ark East
 add("ak", ["clinic"], "clinic", 47, 0, 10700000, "C Medical Hub at Cliff", "تشطيب كامل بالتكييفات · استلام سنتين", false);
 add("ak", ["office"], "office", 71, 0, 17800000, "Cliff Business District", "Core & Shell · استلام سنتين", false);

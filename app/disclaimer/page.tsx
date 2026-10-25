@@ -9,7 +9,7 @@ export default function Disclaimer() {
     <LegalPage title="إخلاء المسؤولية">
       <p>
         {SITE.brand} مسوق عقاري مستقل وليس المطور العقاري لأي من المشروعات المعروضة، ومنها: Golden Gate (Redcon Properties)، W55 (Waterway)،
-        Midlane (Urbnlanes)، One Ninety (LMD)، Central (SED)، Ark East (The Ark Development)، Sleek (AlRabat Properties).
+        Midlane (Urbnlanes)، One Ninety (LMD)، Central (SED)، Ark East (The Ark Development)، Sleek (AlRabat Properties)، Citystars Park St. (Sky Innovo Developments)، UBL (Tameer)، AM:PM (Hassan Allam Properties).
       </p>
       <h2>الأسعار والمواصفات</h2>
       <p>

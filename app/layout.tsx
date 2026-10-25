@@ -6,15 +6,18 @@ import CookieConsent from "@/components/CookieConsent";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.domain),
-  title: "محلات ومكاتب وعيادات للبيع في التجمع الخامس | 7 مشروعات في صفحة واحدة",
+  title: "محلات ومكاتب وعيادات للبيع في التجمع الخامس | 10 مشروعات في صفحة واحدة",
   description:
-    "قارن بين أقوى المشروعات التجارية والإدارية والطبية في التجمع الخامس: Sleek، Golden Gate، Midlane، Central، One Ninety، Ark East، W55. مقدم من 5% وتقسيط لحد 8 سنين.",
+    "قارن بين أقوى المشروعات التجارية والإدارية والطبية في التجمع الخامس والقاهرة الجديدة: Citystars Park St.، Golden Gate، Sleek، AM:PM، UBL، Midlane، Central، One Ninety، Ark East، W55. مقدم من 5% وتقسيط لحد 8 سنين.",
   keywords: [
     "محلات للبيع في التجمع الخامس",
     "مكاتب إدارية للبيع التجمع الخامس",
     "عيادات للبيع التجمع",
     "مول تجاري التسعين الجنوبي",
     "Golden Gate Redcon",
+    "Citystars Park Street",
+    "AM:PM Hassan Allam",
+    "UBL Urban Walk تعمير",
     "Sleek AlRabat",
     "Midlane Urbnlanes",
     "Central SED",
@@ -24,7 +27,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: "محلات ومكاتب وعيادات في التجمع الخامس",
-    description: "7 مشروعات تجارية وإدارية في صفحة واحدة — مقدم من 5% وتقسيط لحد 8 سنين.",
+    description: "10 مشروعات تجارية وإدارية في صفحة واحدة — مقدم من 5% وتقسيط لحد 8 سنين.",
     images: ["/images/sleek.jpg"],
     locale: "ar_EG",
     type: "website",

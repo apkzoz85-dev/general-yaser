@@ -15,7 +15,7 @@ export default function Footer() {
         </div>
         <p className="text-[13px] leading-7">
           {SITE.brand} مسوق عقاري مستقل وليس المطور العقاري لأي من المشروعات المعروضة. أسماء المشروعات والشعارات والصور ملك لأصحابها
-          (Redcon Properties، Waterway، Urbnlanes، LMD، SED، The Ark Development، AlRabat Properties).
+          (Redcon Properties، Waterway، Urbnlanes، LMD، SED، The Ark Development، AlRabat Properties، Sky Innovo Developments، Tameer، Hassan Allam Properties).
         </p>
         <p className="text-[13px] leading-7">
           * الأسعار والمساحات وأنظمة السداد استرشادية وفقاً لآخر تحديث من المطورين، وقابلة للتغيير بدون إشعار مسبق. التعاقد النهائي يتم مع المطور.
