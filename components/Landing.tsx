@@ -76,15 +76,15 @@ export default function Landing() {
   return (
     <>
       {/* HERO */}
-      <section className="bg-ink text-white">
+      <section className="relative isolate overflow-hidden bg-ink text-white">
+        <Image src="/images/parkst.jpg" alt="" aria-hidden="true" fill priority sizes="100vw" className="-z-20 object-cover" />
+        {/* طبقة غامقة عشان الصورة ماتبقاش منورة والكلام يفضل واضح */}
+        <div className="absolute inset-0 -z-10 bg-ink/75" aria-hidden="true" />
+        <div className="absolute inset-0 -z-10 bg-gradient-to-l from-ink via-ink/60 to-ink/30" aria-hidden="true" />
         <div className="mx-auto flex max-w-[1240px] flex-wrap items-center gap-10 px-4 pb-16 pt-12 sm:px-6 md:pt-14">
           <div className="flex min-w-0 flex-[999_1_520px] flex-col gap-5">
             <span className="text-sm font-semibold text-gold">التسعين الشمالي · التسعين الجنوبي · محور محمد نجيب · طريق السويس</span>
-            <h1 className="font-display text-[30px] font-extrabold leading-[1.45] sm:text-[42px]">
-              محلات ومكاتب وعيادات في التجمع الخامس
-              <br />
-              <span className="text-gold">10 مشروعات</span> في صفحة واحدة
-            </h1>
+            <h1 className="font-display text-[30px] font-extrabold leading-[1.45] sm:text-[42px]">محلات ومكاتب وعيادات في التجمع الخامس</h1>
             <p className="max-w-[620px] text-[17px] leading-8 text-[#c9cfd8]">
               قارن بين أقوى المشروعات التجارية والإدارية في التجمع، واختار وحدتك حسب النوع والمساحة ونظام السداد.
             </p>
